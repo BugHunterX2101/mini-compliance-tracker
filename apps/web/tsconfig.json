@@ -20,6 +20,5 @@
       "@ledgers/shared": ["../../packages/shared/src"]
     }
   },
-  "include": ["src", "../../packages/shared/src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "../../packages/shared/src"]
 }
