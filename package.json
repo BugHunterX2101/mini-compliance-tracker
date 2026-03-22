@@ -1,0 +1,15 @@
+{
+  "name": "ledgers-compliance-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build:web": "npm run build --workspace=apps/web",
+    "seed": "npm run seed --workspace=apps/api"
+  }
+}

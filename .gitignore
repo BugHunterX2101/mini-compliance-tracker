@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Database
+apps/api/data/*.db
+apps/api/data/*.db-wal
+apps/api/data/*.db-shm
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Extracted text files (temp)
+PRD.txt
+TECH_ARCH.txt
+PRD_tables.txt
+TECH_tables.txt
