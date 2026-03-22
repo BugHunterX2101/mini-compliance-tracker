@@ -1,0 +1,15 @@
+# https://docs.render.com/blueprint-spec
+services:
+  - type: web
+    name: ledgerscfo-compliance-tracker
+    runtime: node
+    plan: free
+    buildCommand: npm run render:build
+    startCommand: npm run render:start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: DATABASE_URL
+        value: ./data/compliance.db

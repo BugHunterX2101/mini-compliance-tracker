@@ -10,6 +10,8 @@
     "dev:api": "npm run dev --workspace=apps/api",
     "dev:web": "npm run dev --workspace=apps/web",
     "build:web": "npm run build --workspace=apps/web",
-    "seed": "npm run seed --workspace=apps/api"
+    "seed": "npm run seed --workspace=apps/api",
+    "render:build": "npm install && cd apps/web && npm run build",
+    "render:start": "cd apps/api && npx tsx src/db/seed.ts && npx tsx src/index.ts"
   }
 }
